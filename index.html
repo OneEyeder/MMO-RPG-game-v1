@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Победи босса!</title>
+    <link rel="icon" href="icon2.jpg" type="image/jpeg">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="game">
+            
+            <div class="assortiment">
+                <div class="balance-container">
+                <p class="balance-p">Баланс</p>
+                <p class="balance__item">10 золотых</p>
+                </div>
+                <p class="shop-stat">даёт +1 к урону</p>
+                <span class="shop-price">Стоимость 1 золотой</span>
+                <button class="buy__item">Меч</button>
+            </div>
+            <div class="boss">
+                <p class="boss-title">Босс</p>
+                <p class="boss-health">Здоровье 100</p>
+                <button class="boss-btn"><img class="boss-img" src="./goblin.png" alt=""></button>
+            </div>
+        </div>
+
+    </div>
+    <style>
+        .balance-container {
+              position: absolute; /* делаем позиционирование абсолютным */
+        top: 10px;          /* отступ сверху */
+        left: 10px;        /* отступ слева */
+        background: transparent; /* фон прозрачный, чтобы не мешал */
+        z-index: 10;       /* чтобы было поверх других элементов, если нужно */
+        }
+        .balance-p {
+            margin: 0;
+            color: white;
+            text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+        }
+
+        .shop-stat {
+            color: white;
+            font-size: 22px;
+            text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+        }
+
+        .shop-price {
+            color: white;
+            padding-bottom: 10px;
+            text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+        }
+
+        .balance__item {
+            display: inline-flex;
+            background-color: orange;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 0;
+            color: white;
+            text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+        }
+        @media(max-width: 350px) {
+            .balance__item {
+                font-size: 10px;
+            }
+        }
+         @media(max-width: 300px) {
+            .balance__item {
+                font-size: 9px;
+            }
+        }
+        body {
+            margin: 0;
+            
+        }
+
+        .boss-btn {
+            border: none;
+            font: inherit;
+            color: inherit;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .boss-btn:active {
+
+            transform: scale(0.95);
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+            outline: none;
+        }
+
+        .boss-health {
+            font-size: 24px;
+            color: white;
+            text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 0 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .assortiment {
+            position: relative; /* добавьте это */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url(./torgovec.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 50px;
+        }
+
+        .boss-title {
+            font-size: 25px;
+            color: white;
+            text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+        }
+
+        .buy__item {
+            width: 100px;
+            padding: 5px;
+            background-color: #FFC618;
+            border: 3px solid #B8860B;
+            font-family: 'Garamond', serif;
+            font-size: 16px;
+            color: #fff;
+            text-shadow: 1px 1px 2px #000;
+            transition: all 0.3s ease;
+        }
+
+        .buy__item:hover {
+            background-color: #FFD700;
+            box-shadow: inset 0 0 10px #fff, 0 0 15px #FFA500;
+            cursor: pointer;
+        }
+
+        .boss {
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .boss-img {
+            max-width: 300px;
+        }
+        @media(max-width: 400px){
+            .boss-img {
+                max-width: 200px;
+            }
+        }
+        .boss-btn {
+            max-width: 300px;
+        }
+
+        .game {
+            background-image: url(./les.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto;
+            padding-bottom: 100px;
+            padding-top: 0px;
+            border-radius: 10px;
+        }
+    </style>
+    <script src="./main.js"></script>
+</body>
+
+</html>
