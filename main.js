@@ -9,8 +9,8 @@ let message2 = `Твоя цель победить босса, тогда ты �
 message += ` ${user}, На твоем счету ${balance} золотых, `;
 message += 'За 1 золотой можешь позволить себе 1 рандомный предмет из моей лавки';
 
-// alert(message);
-// alert(message2);
+alert(message);
+alert(message2);
 
 document.body.addEventListener('click', () => {
     backgroundMusic.loop = true;
