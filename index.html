@@ -33,8 +33,8 @@
     </div>
     <style>
         .balance-container {
-              position: absolute; /* делаем позиционирование абсолютным */
-        top: 10px;          /* отступ сверху */
+        position: absolute; /* делаем позиционирование абсолютным */
+        bottom:  10px;          /* отступ сверху */
         left: 10px;        /* отступ слева */
         background: transparent; /* фон прозрачный, чтобы не мешал */
         z-index: 10;       /* чтобы было поверх других элементов, если нужно */
@@ -81,6 +81,11 @@
                 1px -1px 0 #000,
                 -1px 1px 0 #000,
                 1px 1px 0 #000;
+        }
+        @media(max-width: 500px) {
+            .balance__item {
+                font-size: 12px;
+            }
         }
         @media(max-width: 350px) {
             .balance__item {

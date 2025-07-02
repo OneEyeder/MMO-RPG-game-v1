@@ -51,7 +51,7 @@ function swordFunction() {
             sword += 1;
             balanceElement.textContent = `${balance} Золотых`;
         } else {
-            balanceElement.textContent = 'Недостаточно золотых для покупки';
+            balanceElement.textContent = `Недостаточно золотых  для покупки`;
             errorSound.currentTime = 0;
             errorSound.play();
         }
